@@ -1,0 +1,16 @@
+{
+  "single": {
+    "torch · 新建 tensor + forward": 81865.5,
+    "torch · 预分配 buffer + forward": 55533.0,
+    "torch · numpy→tensor + forward": 77857.5,
+    "torch · 漏用 no_grad（建图）": 73808.5,
+    "torch · 输入 requires_grad": 74745.5
+  },
+  "batch_per_sample": {
+    "1": 47861.5,
+    "8": 7182.6875,
+    "64": 1448.46875,
+    "512": 730.767578125,
+    "2048": 649.51513671875
+  }
+}

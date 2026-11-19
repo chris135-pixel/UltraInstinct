@@ -1,0 +1,118 @@
+{
+  "train": {
+    "练习条数": 18,
+    "耗时_ms": 3.22,
+    "每条练习_us": 178.9,
+    "提升为逐字": 6,
+    "逐字条目": 6
+  },
+  "accuracy": {
+    "hit": "6/6",
+    "hit_rate": 100.0,
+    "refuse": "3/3",
+    "refuse_rate": 100.0,
+    "typo_query": "窗前明月",
+    "typo_answer": "疑似地上霜",
+    "typo_source": "episodic",
+    "typo_weight": 0.5,
+    "typo_ok": true
+  },
+  "latency": {
+    "kernel_verbatim": {
+      "p50_us": 18.1,
+      "p99_us": 36.4,
+      "mean_us": 18.8
+    },
+    "kernel_gist": {
+      "p50_us": 35.5,
+      "p99_us": 90.5,
+      "mean_us": 39.2
+    },
+    "kernel_none": {
+      "p50_us": 137.3,
+      "p99_us": 281.7,
+      "mean_us": 143.1
+    },
+    "http_verbatim": {
+      "p50_ms": 1.32,
+      "p99_ms": 1.844,
+      "mean_ms": 1.358
+    },
+    "http_none": {
+      "p50_ms": 1.53,
+      "p99_ms": 2.573,
+      "mean_ms": 1.642
+    }
+  },
+  "footprint": {
+    "verbatim": 1542,
+    "gist": 0,
+    "episodic": 4644,
+    "total": 6186
+  },
+  "forgetting": {
+    "ages": [
+      {
+        "label": "1 小时",
+        "days": 0.041666666666666664
+      },
+      {
+        "label": "1 天",
+        "days": 1
+      },
+      {
+        "label": "7 天",
+        "days": 7
+      },
+      {
+        "label": "30 天",
+        "days": 30
+      },
+      {
+        "label": "1 年",
+        "days": 365
+      }
+    ],
+    "matrix": {
+      "1 小时": [
+        47.4,
+        66.2,
+        84.9
+      ],
+      "1 天": [
+        31.4,
+        50.3,
+        69.2
+      ],
+      "7 天": [
+        24.4,
+        41.9,
+        59.5
+      ],
+      "30 天": [
+        20.2,
+        36.4,
+        52.6
+      ],
+      "1 年": [
+        14.6,
+        27.3,
+        40.0
+      ]
+    },
+    "halflife_days": {
+      "高(细节多) c=1.0": 0.03,
+      "中 c=0.6": 1.07,
+      "低(核心要旨) c=0.2": 50.37
+    }
+  },
+  "stream": {
+    "content_type": "text/event-stream; charset=utf-8",
+    "chunks": 7,
+    "first_chunk_ms": 25.108,
+    "total_ms": 25.657,
+    "answer": "疑似地上霜",
+    "correct": true,
+    "done": true
+  }
+}
